@@ -8,10 +8,12 @@ public class Timer : MonoBehaviour
     public GameObject timeDisplay;
     public bool isTakingTime = false;
     public int theSeconds = 150;
+    public static int extendScore;
 
     // Update is called once per frame
     void Update()
     {
+        extendScore = theSeconds;
         if(isTakingTime == false)
         {
             StartCoroutine(SubtractSecond());
