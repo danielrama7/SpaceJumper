@@ -4,9 +4,20 @@ using UnityEngine;
 
 public class Stage003 : MonoBehaviour
 {
+    public GameObject fadeIn;
+
     // Start is called before the first frame update
     void Start()
     {
-        RedirectToLevel.redirectToLevel = 3;
+        RedirectToLevel.redirectToLevel = 5;
+        RedirectToLevel.nextLevel = 6;
+        StartCoroutine(FadeInOff());
+    }
+
+    IEnumerator FadeInOff()
+    {
+        yield return new WaitForSeconds(1);
+        fadeIn.SetActive(false);
+
     }
 }

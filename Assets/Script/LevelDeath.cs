@@ -20,7 +20,8 @@ public class LevelDeath : MonoBehaviour
         yield return new WaitForSeconds(2);
         fadeOut.SetActive(true);
         yield return new WaitForSeconds(1);
-        SceneManager.LoadScene(2);
+        Score.currentScore = 0;
+        SceneManager.LoadScene(RedirectToLevel.redirectToLevel);
 
     }
 }

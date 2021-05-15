@@ -15,8 +15,17 @@ EditorBuildSettings:
     path: Assets/Scenes/RedirectLevel.unity
     guid: 92010582ace696d47962afcd13b1a938
   - enabled: 1
-    path: Assets/Scenes/stage3.unity
+    path: Assets/Scenes/stage1.unity
+    guid: 2f76b41877c83154b826c37177b6766e
+  - enabled: 1
+    path: Assets/Scenes/stage2.unity
     guid: 13f6b5f823c3c3645a8e937d43687e46
+  - enabled: 1
+    path: Assets/Scenes/stage3.unity
+    guid: e127962e31cd0c74b96927bd0cba71af
+  - enabled: 1
+    path: Assets/Scenes/stage5.unity
+    guid: ef9bf3aae5070a94a822713d1e84f578
   - enabled: 1
     path: Assets/Scenes/Credits.unity
     guid: 741a0fc93d41e004ba5e566b0b8e6b0b
