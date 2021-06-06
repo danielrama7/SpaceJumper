@@ -21,10 +21,13 @@ public class StageLock : MonoBehaviour
         }
         if (Stage == 5)
         {
+            LockStage2.SetActive(false);
             LockStage3.SetActive(false);
         }
         if (Stage == 6)
         {
+            LockStage2.SetActive(false);
+            LockStage3.SetActive(false);
             LockStage4.SetActive(false);
         }
     }

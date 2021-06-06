@@ -369,7 +369,8 @@ AudioSource:
   m_GameObject: {fileID: 117794042}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 2bd22dc68dd1d9b45917359be49813af,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: b6ceb0bae7ed17a429c013c925e08ad4, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -1179,7 +1180,8 @@ AudioSource:
   m_GameObject: {fileID: 1096562758}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 2bd22dc68dd1d9b45917359be49813af,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: f6ce57d8d2f1c2f4c85a5a348d17655a, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.1
@@ -2035,7 +2037,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Pass through every obstacles and collect fuels and other collectibles to 
+  m_Text: Pass through every obstacles and collect fuels and other collectibles to
     escape from the isolated space
 --- !u!222 &1850915616
 CanvasRenderer:

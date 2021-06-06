@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.28488728, g: 0.33346665, b: 0.5190617, a: 1}
+  m_IndirectSpecularColor: {r: 0.27426228, g: 0.32116294, b: 0.5016127, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -202,7 +202,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 205628894}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1817929444}
+        m_MethodName: Settings
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &205628894
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -388,7 +399,8 @@ AudioSource:
   m_GameObject: {fileID: 425475906}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 2bd22dc68dd1d9b45917359be49813af,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: b6ceb0bae7ed17a429c013c925e08ad4, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -1106,7 +1118,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -1673,7 +1685,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: Reset Score
 --- !u!222 &1506995214
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1831,7 +1843,7 @@ GameObject:
   - component: {fileID: 1716672427}
   m_Layer: 0
   m_Name: BGM
-  m_TagString: Untagged
+  m_TagString: GameMusic
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1859,7 +1871,8 @@ AudioSource:
   m_GameObject: {fileID: 1716672425}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 2bd22dc68dd1d9b45917359be49813af,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: f6ce57d8d2f1c2f4c85a5a348d17655a, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.063
@@ -2107,6 +2120,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonPress: {fileID: 425475907}
   bestScore: 0
+  Stage2: 0
   bestScoreDisplay: {fileID: 964724490}
 --- !u!4 &1817929445
 Transform:

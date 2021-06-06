@@ -15,8 +15,7 @@ public class MainMenuFunction : MonoBehaviour
     {
         Cursor.visible = true;
         bestScore = PlayerPrefs.GetInt("LevelScore");
-        Stage2 = PlayerPrefs.GetInt("Stage2Lock");
-        bestScoreDisplay.GetComponent<Text>().text = "BEST: " + Stage2;
+        bestScoreDisplay.GetComponent<Text>().text = "BEST: " + bestScore;
     }
 
     public void PlayGame()
@@ -45,6 +44,12 @@ public class MainMenuFunction : MonoBehaviour
     {
         buttonPress.Play();
         SceneManager.LoadScene(8);
+    }
+
+    public void Settings()
+    {
+        buttonPress.Play();
+        SceneManager.LoadScene(10);
     }
 
     public void Back()
