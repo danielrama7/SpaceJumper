@@ -30,5 +30,11 @@ public class StageLock : MonoBehaviour
             LockStage3.SetActive(false);
             LockStage4.SetActive(false);
         }
+        if (Stage == 7)
+        {
+            LockStage2.SetActive(false);
+            LockStage3.SetActive(false);
+            LockStage4.SetActive(false);
+        }
     }
 }

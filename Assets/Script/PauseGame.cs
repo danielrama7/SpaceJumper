@@ -51,6 +51,8 @@ public class PauseGame : MonoBehaviour
         Cursor.visible = false;
         gamePaused = false;
         Time.timeScale = 1;
+        Score.currentScore = 0;
+        CollectItem.currentItem = 0;
         SceneManager.LoadScene(2);
     }
     public void QuitToMenu()
