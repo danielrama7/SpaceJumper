@@ -14,7 +14,7 @@ public class MainMenuFunction : MonoBehaviour
     void Start()
     {
         Cursor.visible = true;
-        bestScore = PlayerPrefs.GetInt("LevelScore");
+        bestScore = PlayerPrefs.GetInt("BestScore");
         bestScoreDisplay.GetComponent<Text>().text = "BEST: " + bestScore;
     }
 
@@ -37,7 +37,7 @@ public class MainMenuFunction : MonoBehaviour
     
     public void ResetBest()
     {
-        PlayerPrefs.SetInt("LevelScore", 0);
+        PlayerPrefs.DeleteAll();
     }
 
     public void HowToPlay()

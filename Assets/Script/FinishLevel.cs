@@ -15,6 +15,7 @@ public class FinishLevel : MonoBehaviour
     public int timeCalc;
     public int scoreCalc;
     public int totalScored;
+    public int bestScore;
     public GameObject levelBlocker;
     public GameObject fadeOut;
     public GameObject MoreItem;
@@ -31,7 +32,16 @@ public class FinishLevel : MonoBehaviour
             theScore.GetComponent<Text>().text = "Score: " + Score.currentScore;
             totalScored = Score.currentScore + timeCalc;
             totalScore.GetComponent<Text>().text = "Total Score: " + totalScored;
-            PlayerPrefs.SetInt("LevelScore", totalScored);
+            bestScore = PlayerPrefs.GetInt("BestScore", bestScore);
+            if (bestScore == null)
+            {
+                bestScore = 0;
+            }
+            if(totalScored > bestScore)
+            {
+                bestScore = totalScored;
+            }
+            PlayerPrefs.SetInt("BestScore", bestScore);
             levelMusic.SetActive(false);
             levelTimer.SetActive(false);
             levelComplete.Play();
